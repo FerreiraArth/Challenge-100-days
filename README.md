@@ -1,2 +1,1 @@
-# Challenge-100-days
- 
+Comecei a querer fazer esse desafio logo após ver um video no tiktok de uma menina fazendo um code muito bonito, e logo me fez interessar mais. Na epoca estava muito no inicio e nem sabia mexer no github direito, mas graças ao video dela me fez querer saber mais e me deu mais vontade de continuar explorando a programação. Então, agora que adiquiri um pouco mais de experiência decidi começar a o desafio pra me ajudar a desenvolver mais habilidades. Se chegou ate aqui quero pedir o favor, que me mande alguma sugestão do que praticar, algum concelho sobre desenvolvimento, ou qualquer critica. Muito obrigado! O perfil da garota é: mari-tza
