@@ -11,11 +11,11 @@ body, html{
     width: 100vw;
     height: 100vh;
     text-align: center;
-    color: #fff;
+    color: #17181d;
     background: linear-gradient(
         45deg,
-        #29353c,
-        #44576d
+        #17181d,
+        #292c35
     );
 }
 
@@ -31,7 +31,8 @@ div#content{
     left: 50%;
     padding: 20px;
     border-radius: 10px;
-    background-color: #000b3b;
+    background-color: #e09045d5;
+    box-shadow: 3px 2px 10px 2px #fcd9b83a;
 
     transform: translate(-50%, -50%);
 }
@@ -41,21 +42,23 @@ div#content{
     width: 50px;
     font-size: 1.5em;
     margin: 1px;
-    background-color: aqua;
+    background-color: #fcd9b8;
     cursor: pointer;
     border: none;
 }
 .button:hover{
-    background: #44576d;
+    background: #292c35;
     color: #fff;
 }
 
 #res{
-    background-color: #aac7d8;
+    background-color: #292c35;
     margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
     height: 40px;
     width: 97%;
-    color: black;
+    color: #fcd9b8;
     text-align: right;
-    font-size: 2em
+    font-size: 2em;
 }
