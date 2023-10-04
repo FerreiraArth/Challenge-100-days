@@ -10,7 +10,12 @@
 body, html{
     width: 100vw;
     height: 100vh;
-    background: black;
+    text-align: center;
+    background: linear-gradient(
+        45deg,
+        #29353c,
+        #44576d
+    );
 }
 
 main{
@@ -20,16 +25,26 @@ main{
 }
 
 div#content{
+    position: absolute;
     top: 50%;
     left: 50%;
-    position: absolute;
+    padding: 20px;
+    border-radius: 10px;
     background-color: white;
-    margin: auto;
 
     transform: translate(-50%, -50%);
 }
-div.button{
-    text-align: center;
-    padding: 10px;
+
+.button{
+    height: 50px;
+    width: 50px;
+    font-size: 1.5em;
+    margin: 1px;
     background-color: aqua;
+    cursor: pointer;
+    border: none;
+}
+.button:hover{
+    background: #44576d;
+    color: #fff;
 }
