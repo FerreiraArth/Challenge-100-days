@@ -12,7 +12,7 @@
     --cor12:#00e6bb80;
     --cor2:#01989f;
     --cor3:#01679c;
-    --cor4:#2a356d;
+    --cor4:#2a356d8e;
     --cor5:#00284c;
 }
 
@@ -30,7 +30,7 @@ main {
     justify-content: center;
     flex-wrap: wrap;
     z-index: 1;
-    width: 85vw;
+    width: 100vw;
     height: 100vh;
     margin: auto;
     background: var(--cor5);
@@ -42,12 +42,60 @@ main {
     overflow: hidden;
     justify-content: center;
     align-items: center;
-    width: 200px;
+    overflow: hidden;
+    width: 300px;
     height: 400px;
     margin: 10px;
-    padding: 20px;
-    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
-    border-left:1px solid var(--cor12);
-    border-top:1px solid var(--cor12);
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+    
+}
+.card:hover{
+    border-left:1px solid var(--cor1);
+    border-top:1px solid var(--cor1);
+    background: var(--cor4);
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.content{
+    padding: 20px;
+    text-align: center;
+    color: var(--cor1);
+
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+}
+.content:hover{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.content > h2 {
+    position: absolute;
+    top: -10%;
+    right: 8%;
+    font-size: 8em;
+    color: #ffffff44;
+    pointer-events: none;
+}
+.content > h3{
+    font-size: 1.8em;
+    z-index: 1;
+    margin-bottom: 10px;
+}
+.contet > p{
+    font-size: 1em;
+    font-weight: 300;
+}
+.content > a{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 15px;
+    padding: 8px 25px;
+    background: white;
+    color: var(--cor5);
+    font-weight: bold;
+    border-radius: 10px;
 }
