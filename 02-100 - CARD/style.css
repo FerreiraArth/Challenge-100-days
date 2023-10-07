@@ -98,4 +98,5 @@ main {
     color: var(--cor5);
     font-weight: bold;
     border-radius: 10px;
+    box-shadow: 5px 5px 15px 5px;
 }
