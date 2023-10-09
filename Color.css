@@ -6,12 +6,6 @@
     --gold: #bd9060;
     --clear: #d9b59d;
 }
-
-:root {
-        --purple: #8a2be2;
-        --blue: #000b3b;
-}
-
 :root {
         --purple: #8a2be2;
         --blue: #000b3b;
@@ -23,7 +17,6 @@
         --frostedbluecc:#dfebf6;
         --frostedgrey:#e6e6e6;
 }
-
 :root {
         --ggrey: #446063;
         --ice: #ccd4dd;
