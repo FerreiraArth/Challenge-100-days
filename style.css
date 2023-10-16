@@ -13,7 +13,7 @@ body, html{
 
 :root {
     --cor0: #052659;
-    --cor1: #0062F5;
+    --cor1: #23238E;
     --cor2: #00F5EC;
     --cor3: #F58100;
     --cor4: #755A3B;
@@ -24,6 +24,7 @@ main{
     width: 90%;
     margin: auto;
     margin-top: 30px;
+    border-radius: 10px;
 
     background-color: var(--cor0);
 }
@@ -34,8 +35,10 @@ header{
     text-align: center;
     color: #fff;
 }
-
-.box{
+header h1{
+    letter-spacing: 5px;
+}
+header .box{
     margin-left: 95px;
     font-size: small;
     box-shadow: 5px 5px 15px black;
@@ -45,23 +48,38 @@ header{
 }
 
 section{
+    position: relative;
     width: 95%;
     margin: auto;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    padding: 2px;
     text-align: center;
-    background: var(--cor2);
+    box-shadow: 5px 5px 15px var(--cor4);
+    background: var(--cor1);
 }
-.content {
-    display: inline;
-    float: inline-end;
+section figure{
+    border-radius: 50%;
+    width: 100px;
+    margin: auto;
+    height: 100px;
+    box-shadow: 5px 5px 15px var(--cor4);
+    margin-bottom: 15px;
 }
-
-figure{
-    width: 150px;
-    height: 150px;
-}
-.image{
+section .image{
     background: url(IMAGES-home/Sem\ título.png) center center no-repeat;
     background-size: cover;
+}
+section .content{
+    padding: 10px;
+    color: #fff;
+}
+section .content h2{
+    font-size: 24px;
+    letter-spacing: 1px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.content h2{
 
 }
