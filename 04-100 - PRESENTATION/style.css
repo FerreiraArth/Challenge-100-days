@@ -91,7 +91,7 @@ section video{
     backdrop-filter: blur(15px);
     box-shadow: 10px 0 15px rgba(0, 0, 0, 0.1);
     transition: 0.5s;
-    transition-delay: 1s;
+    transition-delay: 0s;
 }
 section.active .glass {
     width: 100%;
@@ -105,7 +105,7 @@ section.active .glass {
     z-index: 10;
     text-align: center;
     transition: 0.5s;
-    transition-delay: 1s;
+    transition-delay: 0s;
 }
 section.active .content{
     opacity: 0;
@@ -131,4 +131,75 @@ section.active .content{
     padding: 0 10px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
     text-transform: uppercase;
+}
+
+section .sci {
+    position: absolute;
+    z-index: 100;
+    bottom: 40px;
+    right: 100px;
+    display: flex;
+}
+.sci li{
+    list-style: none;
+    margin: 5px;
+    padding: 0 6px;
+    background: #fff;
+
+    transition: 0.5s;
+    transition-delay: calc(0.2s * var(--i));
+}
+.sci a {
+    color: #111;
+    text-decoration: none;
+    display: inline-block;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+section.active .sci li {
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(100px);
+}
+
+section .nav{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translate(-50%, -50%);
+}
+section.active .nav{
+    opacity: 1;
+    visibility: visible;
+
+    transition-delay: calc(0.2s * var(--i));
+}
+.nav li {
+    list-style: none;
+    text-align: center;
+    margin: 15px 0;
+}
+.nav li a{
+    display: inline-block;
+    padding: 4px 10px;
+    font-size: 1.5em;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #111;
+    background: #fff;
+}
+.nav li a:hover {
+    color: #fff;
+    background: #111;
+    letter-spacing: 10px;
+    text-transform: lowercase;
 }
