@@ -5,8 +5,31 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+:root {
+    --cream: #f5e1ee;
+    --cream2: #e2be8b;
+    --blue: #11114e;
+}
+
 body, html{
     overflow-x: hidden;
     width: 100vw;
     height: 100vh;
+    background: linear-gradient(
+        45deg, var(--cream2), var(--cream)
+    )
+}
+
+main {
+    position: relative;
+    border-radius: 10px;
+    width: 350px;
+    margin: auto;
+    margin-top: 10px;
+    padding: 25px;
+    background-color: #fff;
+}
+
+header{
+    background: #444444;
 }
