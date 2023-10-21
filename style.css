@@ -56,29 +56,37 @@ header > p {
     color: var(--blue);
 }
 
-section{
+section {
+    
     position: relative;
     display: inline-flex;
     justify-content:space-between ;
     margin: 16px;
+}
+
+div#work{
     width: 80px;
     height: 80px;
     cursor: pointer;
     background: var(--blue);
     color: #fff;
 }
-section:hover{
+div#work:hover{
     background: var(--cream2);
     color: var(--blue);
 }
 
-section > h2{
+div#work h2{
     position: absolute;
     top: 50%;
     left: 50%;
 
     transform: translate(-50%, -50%);
     
+}
+div#work a {
+    text-decoration: none;
+    color: #fff;
 }
 
 footer{
