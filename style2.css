@@ -60,10 +60,18 @@ header > p {
     color: var(--blue);
 }
 
+article{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 430px;
+    width: 30px;
+
+}
+
 section {
-    position: relative;
-    display: inline-flex;
-    margin: 16px;
+    
 }
 
 div#work{
