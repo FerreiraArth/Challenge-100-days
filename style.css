@@ -20,7 +20,9 @@ body, html{
     width: 100vw;
     height: 100vh;
     background: linear-gradient(
-        45deg, var(--cream2), var(--cream)
+        45deg, 
+        var(--cream2), 
+        var(--cream)
     );
     color: var(--blue);
 

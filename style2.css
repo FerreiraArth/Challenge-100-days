@@ -15,12 +15,14 @@
     --blue: #11114e;
 }
 
-body, html{
+body{
     overflow-x: hidden;
     width: 100vw;
     height: 100vh;
     background: linear-gradient(
-        45deg, var(--cream2), var(--cream)
+        45deg, 
+        var(--cream2), 
+        var(--cream)
     );
     color: var(--blue);
 
@@ -31,7 +33,6 @@ body, html{
 
 
 main {
-    position: relative;
     border-radius: 10px;
     width: 350px;
     height: 600px;
@@ -64,14 +65,14 @@ article{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-direction: column;
+    flex-wrap: wrap;
+
     height: 430px;
     width: 30px;
-
 }
 
 section {
-    
+    position: relative;
 }
 
 div#work{
