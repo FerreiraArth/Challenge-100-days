@@ -61,21 +61,28 @@ header > p {
     color: var(--blue);
 }
 
-article{
+div#body{
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    flex-direction: row;
     flex-wrap: wrap;
 
     height: 430px;
-    width: 30px;
+    width: 350px;
 }
 
-section {
-    position: relative;
+div.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    background: var(--blue);
 }
 
-div#work{
+/* div#work{
     width: 80px;
     height: 80px;
     cursor: pointer;
@@ -98,10 +105,4 @@ div#work h2{
 div#work a {
     text-decoration: none;
     color: #fff;
-}
-
-footer{
-    margin-top: 60px;
-    text-align: center;
-    color: #11114e6e;
-}
+} */
