@@ -31,21 +31,22 @@ body{
     justify-content: center;
 }
 
-
 main {
     border-radius: 10px;
     width: 350px;
     height: 600px;
     background-color: #fff;
     overflow: hidden;
+    box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.5);
 }
 
 header{
     display: block;
-    background: var(--blue);
-    color: #fff;
     padding: 10px;
     text-align: center;
+    background: var(--blue);
+    color: #fff;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
     height: 170px;
 }
 header > h1 {
@@ -66,6 +67,7 @@ div#body{
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
+    overflow: auto;
 
     height: 430px;
     width: 350px;
@@ -81,6 +83,9 @@ div.work{
     cursor: pointer;
     background: var(--blue);
     color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     transition: 0.5s;
 }
 div.work:hover{
@@ -89,4 +94,21 @@ div.work:hover{
 }
 div.content a{
     text-decoration: none;
+}
+
+.loader {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid transparent;
+    border-top-color: var(--cream2); /* Cor da parte superior do círculo */
+    animation: spin 2s linear infinite;
+    transition: 1s;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.loader:hover{
+    border-top-color: var(--blue);
 }
