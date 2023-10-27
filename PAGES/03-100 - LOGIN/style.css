@@ -33,9 +33,9 @@ main{
         #dff1ff);
     }
 main .color{
+    filter: blur(150px);
     position: absolute;
     background: #ffffff1a;
-    filter: blur(150px);
 }
 main .color:nth-child(1){
     top:-350px;
