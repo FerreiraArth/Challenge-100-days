@@ -57,10 +57,19 @@ body{
     font-size: 1rem;
     cursor: pointer;
     background-color: #cee1ff;
+    transition: .5s ease-in;
 }
-
 #actions button:hover{
     background-color: #7f099c;
     border: 1px solid #cee1ff;   
-    transition: .5s;
+}
+
+#marks-list{
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 2px;
+    gap: 0.7rem;
+}
+#marks-list p:first-child{
+    margin-top: 1.5rem;
 }
