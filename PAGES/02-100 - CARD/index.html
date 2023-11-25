@@ -3,7 +3,7 @@
 <head>
 
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script type="text/javascript" src="script.js"></script>
     <link rel="shortcut icon" href="../IMAGES-home/favicon.ico" type="image/x-icon">
 
     <meta charset="UTF-8">
@@ -63,6 +63,16 @@
         </div>
 
     </main>
+
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max-glare": .4,
+        });
+        
+    </script>
 
 </body>
 </html>
