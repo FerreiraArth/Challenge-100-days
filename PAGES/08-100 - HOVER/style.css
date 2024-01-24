@@ -9,11 +9,6 @@
     box-sizing: border-box;
 }
 
-:root{
-    --blue: #11114e;
-    --purple: #7f099c;
-}
-
 body{
     color: #fff;
     background: BLACK;
