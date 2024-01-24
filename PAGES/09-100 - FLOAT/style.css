@@ -37,9 +37,9 @@ button{
   transition: 1s ease;
 }
 button:hover {
-  padding: 1.2em 2.2em;
   box-shadow: 3px 1px 20px 3px #8a2be2;
   transition: 1s ease;
+  transform: scale(1.1);
 }
 
 button span:not(:nth-child(6)) {
