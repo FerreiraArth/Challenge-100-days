@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+body > h1 {
+    text-align: center;
+}
+/* .container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.main {
+    width: 500px;
+    background: rgb(156, 156, 156);
+    padding: 10px;
+}
+.content {
+    padding: 10px;
+    border: 3px solid black;
+    width: 25rem;
+}
+.bot {
+    position: relative;
+    background: red;
+    width: 30px;
+    height: 30px;
+    animation-name: anything;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#div1{
+    animation-timing-function: linear;
+}
+#div2{
+    animation-timing-function: ease;
+}
+#div3{
+    animation-timing-function: ease-in;
+}
+#div4{
+    animation-timing-function: ease-in-out;
+}
+#div5{
+    animation-timing-function: ease-out;
+}
+#div6{
+    animation-timing-function: steps(7, start);
+}
+
+
+@keyframes anything {
+    0% {left: 0;}
+    50% {left: 90%;}
+    100% {left:0;}
+}

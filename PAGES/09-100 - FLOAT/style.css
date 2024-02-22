@@ -54,7 +54,7 @@ button span:not(:nth-child(6)) {
   transform: translate(-50%, -50%);
 }
 button span:nth-child(6) {
-    position: relative;
+  position: relative;
 }
 button span:nth-child(1) {
   transform: translate(-3.3em, -5em);
