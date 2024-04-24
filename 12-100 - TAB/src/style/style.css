@@ -1,7 +1,13 @@
 @import url();
+.content {
+    display: none;
+}
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.content.show {
+    display: flex;
+}
+
+.content-img {
+    width: 50%;
+    height: 250px;
 }
