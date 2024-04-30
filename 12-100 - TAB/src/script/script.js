@@ -5,6 +5,10 @@ tabs.forEach(tab => tab.addEventListener('click', () => tabClicked(tab)));
 //pra cada elemento que estiver dentro de tabs adicionamos um evento de clique  => quando clicado adiciona uma funçao
 
 const tabClicked = (tab) => {
+
+    tabs.forEach(tab => tab.classList.remove('active'))
+    tab.classList.add('active')
+
     const contents = document.querySelectorAll('.content');
     //pegara todos com a classe .content
 
@@ -19,3 +23,6 @@ const tabClicked = (tab) => {
     content.classList.add('show')
     //adicionara a classe show que for igual a content
 }
+
+const currentActiveTab = document.querySelector('.tab-btn.active');
+tabClicked(currentActiveTab);

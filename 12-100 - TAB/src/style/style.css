@@ -20,15 +20,41 @@ body {
     width: 600px;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 10px 15px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
+.tab-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.tab-btn {
+    width: 100%;
+    border: none;
+    color: #020617;
+    background: transparent;
+    border-radius: 8px 8px 0 0;
+    font-weight: 500;
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color ease .5s;
+}
+.tab-btn.active {
+    background: #c7d2fe;
+}
+.tab-btn:hover {
+    background: #a5b4fc;
+}
 .content {
     display: none;
 }
 
 .content.show {
     display: flex;
+    gap: 14px;
+    padding: 16px;
+    background-color: #c7d2fe;
+    border-radius: 0 0 8px 8px;
 }
 
 .content-img {
