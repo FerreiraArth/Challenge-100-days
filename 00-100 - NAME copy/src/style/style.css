@@ -5,3 +5,31 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#Bottom {
+    position: relative;
+}
+
+.ball {
+    position: absolute;
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;animation: animate 10s linear infinite;
+    animation-delay: calc(-1s * var(--i));
+}
+@keyframes animate {
+    0%, 100%{
+        transform: translateY(-40px);
+    } 50%{
+        transform: translateY(40px);
+    }
+}
