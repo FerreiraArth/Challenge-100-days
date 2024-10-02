@@ -8,7 +8,7 @@
     --clear: #d9b59d;
 }
 :root {
-        --purple: #8a2be2;
+        --purple: #;8a2be2
         --ocean-blue: #11114e;
         --blue: #000b3b;
         --green: #00414d;
@@ -28,4 +28,7 @@
 :root {
         --cream: #e2be8b;
         --blue: #11114e;
+}
+:root {
+        --random1: #00faf1;
 }
