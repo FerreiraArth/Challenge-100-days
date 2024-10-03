@@ -11,7 +11,27 @@ body {
 }
 
 #Window {
+    width: 100vw;
+    height: 100vh;
+    
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.letter {
+    display: flex;    
+    justify-content: space-around;
+
+    flex-direction: column;
+    text-align: center;
+
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    letter-spacing: 3px;
+    margin: 20px;
+
+    background-color: black;
+    color: aliceblue;
 }
